@@ -1,83 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figmaland</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <style>
-    .blue-button 
-       {
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px; 
-            font-size: 20px;
-            cursor: pointer;
-        }
-    .round-text 
-        {
-          padding: 10px 20px;
-          border: 0.05;
-          border-radius: 20px;
-          font-size: 20px;
-          width: 200px; 
-        }
-     </style>
 </head>
+
 <body>
-    <header>
-    <div style="background-image: url(img/backimage.jpg);"></div>
-    <div>
-        <nav>
-        <a href="#">Home</a>
-        <a href="#product">Product</a>
-        <a href="#">Pricing</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        </nav>
-        <p></p><img src="img/logo.bmp" alt="Figmaland logo">
-        <img src="img/twitter-logo.bmp" alt="Twitter logo">
-        <img src="img/facebook-logo.bmp" alt="Facebook logo">
-        <img src="img/in-logo.bmp" alt="In logo">
-        <h1>The best products starts with Figma</h1>
-        <p>More calendars are designed for teams. State is designed for freelancers</p>
-        <button class="blue-button">Try for free</button>
-    </div>
-</header>
+    <header class="header">
+        <div class="header__navigation">
+            <nav class="navigation">
+                <a class="navigation__link" href="#">Home</a>
+                <a class="navigation__link" href="#product">Product</a>
+                <a class="navigation__link" href="#">Pricing</a>
+                <a class="navigation__link" href="#">About</a>
+                <a class="navigation__link" href="#">Contact</a>
+            </nav>
+            <p></p>
+            <img class="header__navigation header__navigation--image" src="img/logo.bmp" alt="Figmaland logo">
+            <img class="header__navigation header__navigation--image" src="img/twitter-logo.bmp" alt="Twitter logo">
+            <img class="header__navigation header__navigation--image" src="img/facebook-logo.bmp" alt="Facebook logo">
+            <img class="header__navigation header__navigation--image" src="img/in-logo.bmp" alt="In logo">
+            <h1 class="header__title">The best products starts with Figma</h1>
+            <p class="header__text">More calendars are designed for teams. State is designed for freelancers</p>
+            <button class="header__button">Try for free</button>
+        </div>
+    </header>
 
-<main>
-<h2 id="product">Features</h2>
-<p>Most calendars are designed for teams. State is designed for freelancers</p>
-<img src="img/figures.bmp" alt="picture 1">
-<h3>OpenType features variable fonts</h3>
-<p>State helps you see how many more days you need to work to reach your financial goal</p>
-<img src="img/pencil.bmp" alt="picture 2">
-<h3>Design real data</h3>
-<p>State helps you see how many more days you need to work to reach your financial goal</p>
-<img src="img/brush.bmp" alt="picture 3">
-<h3>Fastest way to take actions</h3>
-<p>State helps you see how many more days you need to work to reach your financial goal</p>
-<img src="img/woman.bmp" alt="Scrin of a video" width="650">
-</main>
+    <main>
+        <section class="product">
+            <h1 id="product" class="product__title">Features</h1>
+            <p class="product__text">Most calendars are designed for teams. State is designed for freelancers</p>
+            <img class="product__img" src="img/figures.bmp" alt="figures">
+            <h2 class="product__subtitle">OpenType features variable fonts</h2>
+            <p class="product__text">State helps you see how many more days you need to work to reach your financial
+                goal</p>
+            <img class="product__img" src="img/pencil.bmp" alt="pencil">
+            <h2 class="product__subtitle">Design real data</h2>
+            <p class="product__text">State helps you see how many more days you need to work to reach your financial goal
+            </p>
+            <img class="product__img" src="img/brush.bmp" alt="brush">
+            <h2 class="product__subtitle">Fastest way to take actions</h2>
+            <p class="product__text">State helps you see how many more days you need to work to reach your financial
+                goal</p>
+        </section>
+        <img class="product__video" src="img/woman.bmp" alt="Scrin of a video" width="650">
 
-<h3>Fastest way to organize</h3>
-<p>Most calendars are designed for teams. State is designed for freelancers</p>
-<button class="blue-button">Try for free</button>
-<p></p><img src="img/computer.bmp" alt="">
+    </main>
 
-<p></p>
-<h3>At your fingertips</h3>
-<h2 style="font-size: 25px; font-weight: 400;">Lighting fast prototyping</h2>
-<h4>Subscribe to our Newsletter</h4>
-<h2 style="font-size: 15px; font-weight: 400;">Available exclusivery on Figmaland</h2>
-<form action="https://www.freecatphotoapp.com/submit-cat-photo">
-<input type="text" class="round-text" placeholder="Your Email" required>
-<button class="blue-button">Subscribe</button>
+    <section class="fastest-way">
+        <h2 class="fastest-way__title">Fastest way to organize</h2>
+        <p class="fastest-way__text">Most calendars are designed for teams. State is designed for freelancers</p>
+        <button class="fastest-way__button">Try for free</button>
+        <p></p>
+        <img class="fastest-way__img" src="img/computer.bmp" alt="computer">
+    </section>
 
-<img src="img/envelope-picture.jpg" alt="" width="500">
-</form>
+    <section class="lighting">
+        <p class="lighting__text">At your fingertips</p>
+        <h2 class="lighting__title">Lighting fast prototyping</h2>
+        <p class="lighting__text">Subscribe to our Newsletter</p>
+        <p class="lighting__text">Available exclusivery on Figmaland</p>
+        <form action="https://formspree.io/f/mbjvjyzn" method="post" >
+            <input type="text" class="lighting__input" name="email" placeholder="Your Email" required>
+            <button class="lighting__button">Subscribe</button>
+        </form>
+            <img class="lighting__img" src="img/envelope-picture.jpg" alt="envelope" width="500">
+    </section>
+    
 </body>
+
 </html>
