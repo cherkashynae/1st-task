@@ -6,27 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figmaland</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link rel="shortcut icon" href="img/figmaland-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__navigation">
-            <nav class="navigation">
-                <a class="navigation__link" href="#">Home</a>
-                <a class="navigation__link" href="#product">Product</a>
-                <a class="navigation__link" href="#">Pricing</a>
-                <a class="navigation__link" href="#">About</a>
-                <a class="navigation__link" href="#">Contact</a>
-            </nav>
-            <p></p>
-            <img class="header__navigation header__navigation--image" src="img/logo.bmp" alt="Figmaland logo">
-            <img class="header__navigation header__navigation--image" src="img/twitter-logo.bmp" alt="Twitter logo">
-            <img class="header__navigation header__navigation--image" src="img/facebook-logo.bmp" alt="Facebook logo">
-            <img class="header__navigation header__navigation--image" src="img/in-logo.bmp" alt="In logo">
-            <h1 class="header__title">The best products starts with Figma</h1>
-            <p class="header__text">More calendars are designed for teams. State is designed for freelancers</p>
-            <button class="header__button">Try for free</button>
+        <div id="box-container--links">
+            <div id="header__navigation">
+                <nav>
+                    <a class="header__navigation--link" href="#">Home</a>
+                    <a class="header__navigation--link" href="#product">Product</a>
+                    <a class="header__navigation--link" href="#">Pricing</a>
+                    <a class="header__navigation--link" href="#">About</a>
+                    <a class="header__navigation--link" href="#">Contact</a>
+                </nav>
+            </div>
+            <div id="header__images">
+                <img class="header__figmaland-logo" src="img/logo.bmp" alt="Figmaland logo">
+                <img class="header__socials" src="img/twitter-logo.bmp" alt="Twitter logo">
+                <img class="header__socials" src="img/facebook-logo.bmp" alt="Facebook logo">
+                <img class="header__socials" src="img/in-logo.bmp" alt="In logo">
+                <h1 class="header__title">The best products starts with Figma</h1>
+                <p class="header__text">More calendars are designed for teams. State is designed for freelancers</p>
+                <button class="header__button">Try for free</button>
+            </div>
         </div>
     </header>
 
@@ -34,18 +38,31 @@
         <section class="product">
             <h1 id="product" class="product__title">Features</h1>
             <p class="product__text">Most calendars are designed for teams. State is designed for freelancers</p>
-            <img class="product__img" src="img/figures.bmp" alt="figures">
-            <h2 class="product__subtitle">OpenType features variable fonts</h2>
-            <p class="product__text">State helps you see how many more days you need to work to reach your financial
-                goal</p>
-            <img class="product__img" src="img/pencil.bmp" alt="pencil">
-            <h2 class="product__subtitle">Design real data</h2>
-            <p class="product__text">State helps you see how many more days you need to work to reach your financial goal
-            </p>
-            <img class="product__img" src="img/brush.bmp" alt="brush">
-            <h2 class="product__subtitle">Fastest way to take actions</h2>
-            <p class="product__text">State helps you see how many more days you need to work to reach your financial
-                goal</p>
+
+            <div class="product__container-1">
+                <img class="product__img" src="img/figures.bmp" alt="figures">
+                <h2 class="product__subtitle">OpenType features variable fonts</h2>
+                <p class="product__text">State helps you see how many more days you need to work to reach your
+                    financial
+                    goal</p>
+            </div>
+            <div class="product__container-2">
+                <img class="product__img" src="img/pencil.bmp" alt="pencil">
+                <h2 class="product__subtitle">Design real data</h2>
+                <p class="product__text">State helps you see how many more days you need to work to reach your
+                    financial
+                    goal
+                </p>
+            </div>
+            <div>
+                <div class="product__container-3">
+                    <img class="product__img" src="img/brush.bmp" alt="brush">
+                    <h2 class="product__subtitle">Fastest way to take actions</h2>
+                    <p class="product__text">State helps you see how many more days you need to work to reach your
+                        financial
+                        goal</p>
+                </div>
+
         </section>
         <img class="product__video" src="img/woman.bmp" alt="Scrin of a video" width="650">
 
@@ -64,13 +81,13 @@
         <h2 class="lighting__title">Lighting fast prototyping</h2>
         <p class="lighting__text">Subscribe to our Newsletter</p>
         <p class="lighting__text">Available exclusivery on Figmaland</p>
-        <form action="https://formspree.io/f/mbjvjyzn" method="post" >
+        <form action="https://formspree.io/f/mbjvjyzn" method="post">
             <input type="text" class="lighting__input" name="email" placeholder="Your Email" required>
             <button class="lighting__button">Subscribe</button>
         </form>
-            <img class="lighting__img" src="img/envelope-picture.jpg" alt="envelope" width="500">
+        <img class="lighting__img" src="img/envelope-picture.jpg" alt="envelope" width="500">
     </section>
-    
+
 </body>
 
 </html>

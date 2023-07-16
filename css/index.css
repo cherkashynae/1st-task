@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Noto+Sans+TC:wght@300&family=Victor+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Noto+Sans+TC:wght@300&family=Victor+Mono:wght@200&display=swap');
+
+:root {
+    --header__navigation--link-font: 'Victor Mono', monospace;
+    --header__title--font: 'DM Sans', sans-serif;
+    --header-subtitle--font: 'DM Sans', sans-serif;
+    --header__text--font: 'DM Sans', sans-serif;
+}
+
+.header {
+    background-image: url(img/header-background-photo.jpg);
+}
+
+.header__navigation {
+    margin-top: 15px;
+}
+
+.header__navigation--link {
+    color: black;
+    margin: 5px 25px;
+    font-family: var(--header__navigation--link-font);
+}
+
+.header__navigation--link:hover {
+    color: blue;
+}
+
+.header__figmaland-logo {
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 550px;
+    border-radius: 7px;
+}
+
+.header__socials {
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#box-container--links {
+    display: flex;
+}
+
+.header__title {
+    margin-top: 300px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--header__title--font);
+    margin-left: -125px;
+}
+
+.product {
+    text-align: center;
+}
+
+.header__text {
+    font-family: var(--header__text--font);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: -50px;
+}
+
+.header__button {
+    margin-left: 145px;
+    background-color: cornflowerblue;
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header__button:hover {
+    background-color: blue;
+}
+
+.product__title {
+    font-family: var(--header__subtitle--font);
+    font-size: 40px;
+    font-weight: 450;
+    margin-top: 150px;
+}
+
+.product__text {
+    font-family: var(--header__subtitle--font);
+    font-size: 20px;
+    font-weight: 500;
+}
+.product__container-1 {
+    display: flex;
+}
+/*
+.product__container-2 {
+    display: flex;
+}
+.product__container-3 {
+    display: flex;
+}*/
