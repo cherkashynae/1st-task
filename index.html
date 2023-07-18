@@ -11,83 +11,16 @@
 </head>
 
 <body>
-    <header class="header">
-        <div id="box-container--links">
-            <div id="header__navigation">
-                <nav>
-                    <a class="header__navigation--link" href="#">Home</a>
-                    <a class="header__navigation--link" href="#product">Product</a>
-                    <a class="header__navigation--link" href="#">Pricing</a>
-                    <a class="header__navigation--link" href="#">About</a>
-                    <a class="header__navigation--link" href="#">Contact</a>
-                </nav>
-            </div>
-            <div id="header__images">
-                <img class="header__figmaland-logo" src="img/logo.bmp" alt="Figmaland logo">
-                <img class="header__socials" src="img/twitter-logo.bmp" alt="Twitter logo">
-                <img class="header__socials" src="img/facebook-logo.bmp" alt="Facebook logo">
-                <img class="header__socials" src="img/in-logo.bmp" alt="In logo">
-                <h1 class="header__title">The best products starts with Figma</h1>
-                <p class="header__text">More calendars are designed for teams. State is designed for freelancers</p>
-                <button class="header__button">Try for free</button>
-            </div>
-        </div>
-    </header>
+    <header data-include="partials/header.partial.html"></header>
 
     <main>
-        <section class="product">
-            <h1 id="product" class="product__title">Features</h1>
-            <p class="product__text">Most calendars are designed for teams. State is designed for freelancers</p>
-
-            <div class="product__container-1">
-                <img class="product__img" src="img/figures.bmp" alt="figures">
-                <h2 class="product__subtitle">OpenType features variable fonts</h2>
-                <p class="product__text">State helps you see how many more days you need to work to reach your
-                    financial
-                    goal</p>
-            </div>
-            <div class="product__container-2">
-                <img class="product__img" src="img/pencil.bmp" alt="pencil">
-                <h2 class="product__subtitle">Design real data</h2>
-                <p class="product__text">State helps you see how many more days you need to work to reach your
-                    financial
-                    goal
-                </p>
-            </div>
-            <div>
-                <div class="product__container-3">
-                    <img class="product__img" src="img/brush.bmp" alt="brush">
-                    <h2 class="product__subtitle">Fastest way to take actions</h2>
-                    <p class="product__text">State helps you see how many more days you need to work to reach your
-                        financial
-                        goal</p>
-                </div>
-
-        </section>
-        <img class="product__video" src="img/woman.bmp" alt="Scrin of a video" width="650">
-
+        <section data-include="partials/features.partial.html"></section>
     </main>
 
-    <section class="fastest-way">
-        <h2 class="fastest-way__title">Fastest way to organize</h2>
-        <p class="fastest-way__text">Most calendars are designed for teams. State is designed for freelancers</p>
-        <button class="fastest-way__button">Try for free</button>
-        <p></p>
-        <img class="fastest-way__img" src="img/computer.bmp" alt="computer">
-    </section>
+    <section data-include="partials/fastest-way.partial.html"></section>
 
-    <section class="lighting">
-        <p class="lighting__text">At your fingertips</p>
-        <h2 class="lighting__title">Lighting fast prototyping</h2>
-        <p class="lighting__text">Subscribe to our Newsletter</p>
-        <p class="lighting__text">Available exclusivery on Figmaland</p>
-        <form action="https://formspree.io/f/mbjvjyzn" method="post">
-            <input type="text" class="lighting__input" name="email" placeholder="Your Email" required>
-            <button class="lighting__button">Subscribe</button>
-        </form>
-        <img class="lighting__img" src="img/envelope-picture.jpg" alt="envelope" width="500">
-    </section>
-
+    <section data-include="partials/lighting.partial.html"></section>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 
 </html>
